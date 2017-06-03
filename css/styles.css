@@ -610,9 +610,9 @@ a:active {
 
 
 
-/*About*/
+/*Paragraphs*/
 
-.about {
+.paragraphContainer {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -626,7 +626,7 @@ a:active {
     border-bottom: 1px solid #e5e5e5;
   }
 
-    .about #title {
+    .paragraphContainer #title {
       /*Typography*/
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -637,20 +637,20 @@ a:active {
       padding-bottom: 15px;
     }
 
-  .about #headshots {
+  .paragraphContainer #headshots {
     /*Display*/
     overflow: hidden;
     /*Centering*/
     text-align: center;
   }
 
-  .about-image {
+  .paragraphContainer-image {
     margin: 15px;
     display: inline;
     overflow: auto;
   }
 
-  .about-image img {
+  .paragraphContainer-image img {
     width: 100%;
     max-width: 25%;
     background-color: #fcfcfc;
@@ -662,7 +662,7 @@ a:active {
     margin-bottom: 20px;
   }
 
-    .about #headshots img {
+    .paragraphContainer #headshots img {
       /*Display*/
       display: inline-block;
       /*Spacing*/
@@ -673,7 +673,7 @@ a:active {
       /*vertical-align: middle;*/
     }
 
-  .about #aboutMe {
+  .paragraphContainer #paragraphContainerMe {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -685,7 +685,7 @@ a:active {
     /*padding: 15px;*/
   }
 
-  .about .skills {
+  .paragraphContainer .skills {
     /*Double Columns*/
     display: flex;
     justify-content: space-around;
@@ -694,14 +694,14 @@ a:active {
   }
 
   @media screen and (max-width: 400px) {
-    .about .skills,
-    .mobile-about-image {
+    .paragraphContainer .skills,
+    .mobile-paragraphContainer-image {
       display: none;
       visibility: hidden;
     }
   }
 
-    .about .skills span {
+    .paragraphContainer .skills span {
       /*Typography*/
       text-align: center;
       font-family: 'Roboto', sans-serif;
@@ -710,7 +710,7 @@ a:active {
     font-style: normal;
   }
 
-    .about .skills img {
+    .paragraphContainer .skills img {
       /*Image Sizing*/
       max-width: calc(150px - 45px);
       height: auto;
@@ -789,26 +789,26 @@ a:active {
 
 /*4k*/
 @media screen and (min-width: 2000px) {
-  .about {
+  .paragraphContainer {
     /*Sizing*/
     width: 800px;
   }
 
-    .about #title {
+    .paragraphContainer #title {
       font-size: 1.5em;
     }
 
-    .about #headshots img {
+    .paragraphContainer #headshots img {
       /*Sizing*/
       width: calc(100% / 4 - 3px);
     }
 
-    .about #headshots #imageMobile {
+    .paragraphContainer #headshots #imageMobile {
       /*Alternate Sizing*/
       width: calc(100% / 8.0 - 3px);
     }
 
-  .about #aboutMe {
+  .paragraphContainer #paragraphContainerMe {
     font-size: 1.05em;
   }
 
@@ -824,25 +824,25 @@ a:active {
 
 /*Desktop*/
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
-  .about {
+  .paragraphContainer {
     width: 800px;
     padding-bottom: calc(15px + .25em);
   }
 
-    .about #title {
+    .paragraphContainer #title {
       font-size: 1.5em;
     }
 
-    .about #headshots img {
+    .paragraphContainer #headshots img {
       width: calc(100% / 3.75 - 3px);
     }
 
-    .about #headshots #imageMobile {
+    .paragraphContainer #headshots #imageMobile {
       /*Alternate Sizing*/
       width: calc(100% / 7 - 3px);
     }
 
-  .about #aboutMe {
+  .paragraphContainer #paragraphContainerMe {
     font-size: 1.05em;
   }
 
@@ -858,33 +858,33 @@ a:active {
 
 /*Mobile*/
 @media screen and (max-width: 1000px) {
-  .about {
+  .paragraphContainer {
     max-width: 800px;
   }
 
-    .about #title {
+    .paragraphContainer #title {
       font-size: 1.5em;
     }
 
-    .about #headshots {
+    .paragraphContainer #headshots {
     text-align: center;
   }
 
-    .about #headshots img {
+    .paragraphContainer #headshots img {
       width: 100%;
       max-width: calc(50vw - 60px);
       padding: 10px;
     }
 
-    .about #headshots #imageMobile {
+    .paragraphContainer #headshots #imageMobile {
       width: 20%;
     }
 
-  .about #aboutMe {
+  .paragraphContainer #paragraphContainerMe {
     font-size: 1em;
   }
 
-  .about .skills {
+  .paragraphContainer .skills {
     /*Double Columns*/
     column-count: 1;
   }
@@ -1000,9 +1000,9 @@ a:active {
 
 
 
-/*Projects*/
+/*Cards*/
 
-.projects {
+.cardContainer {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -1027,8 +1027,8 @@ a:active {
     font-family: "Roboto", sans-serif;
   }
 
-    .linkCenter .git,
-    .linkCenter .email {
+    .linkCenter .orangeButton,
+    .linkCenter .blueButton {
       marigin-top: 0px;
     }
 
@@ -1039,7 +1039,7 @@ a:active {
     padding-top: 20px;
   }
 
-  .projects #subtitle {
+  .cardContainer #subtitle {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -1074,7 +1074,7 @@ a:active {
       text-decoration: none;
     }
 
-  .projects #title {
+  .cardContainer #title {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -1085,13 +1085,13 @@ a:active {
     padding-bottom: 15px;
   }
 
-  .projects #projectList {
+  .cardContainer #cardList {
     /*Centering*/
     margin: 0 auto;
     text-align: center;
   }
 
-  .projects #projectItem {
+  .cardContainer #projectItem {
     /*Display*/
     display: inline-block;
     /*Spacing*/
@@ -1273,23 +1273,23 @@ a:active {
 
 /*4k*/
 @media screen and (min-width: 2000px) {
-  .projects {
+  .cardContainer {
     /*Sizing*/
     width: 1000px;
   }
 
-  .projects #title {
+  .cardContainer #title {
     /*Typography*/
     font-size: 1.5em;
   }
 
-  .projects #projectList {
+  .cardContainer #cardList {
     /*Centering*/
     margin: 0 auto;
     text-align: center;
   }
 
-  .projects #projectItem {
+  .cardContainer #projectItem {
     /*Display*/
     display: inline-block;
     /*Sizing*/
@@ -1303,7 +1303,7 @@ a:active {
     width: calc(50% - 10px) !important;
   }
 
-  .projects #projectItemSmall {
+  .cardContainer #projectItemSmall {
     /*Display*/
     display: inline-block;
     /*Sizing*/
@@ -1335,24 +1335,24 @@ a:active {
 
 /*Desktop*/
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
-  .projects {
+  .cardContainer {
     /*Sizing*/
     width: 1000px;
   }
 
-  .projects #title {
+  .cardContainer #title {
     /*Typography*/
     font-size: 1.5em;
   }
 
-  .projects #projectItem {
+  .cardContainer #projectItem {
     /*Display*/
     display: inline-block;
     /*Sizing*/
     width: 33%;
   }
 
-  .projects #projectItemSmall {
+  .cardContainer #projectItemSmall {
     /*Display*/
     display: inline-block;
     /*Sizing*/
@@ -1397,17 +1397,17 @@ a:active {
     display: none;
   }
 
-  .projects {
+  .cardContainer {
       /*Sizing*/
       width: 100vw;
     }
 
-  .projects #title {
+  .cardContainer #title {
     /*Typography*/
     font-size: 1.5em;
   }
 
-  .projects #projectItem {
+  .cardContainer #projectItem {
     /*Display*/
     display: block;
     /*Sizing*/
@@ -1445,7 +1445,7 @@ a:active {
   }
 }
 
-.portfolio {
+.imageShowcase {
   border-bottom: 1px solid #e5e5e5;
   margin-top: .75em;
 }
@@ -1588,9 +1588,9 @@ a:active {
 
 
 
-/*Contact*/
+/*Buttons*/
 
-.contact {
+.buttonContainer {
     /*Centering*/
     margin-left: auto;
     line-height: 1.5em;
@@ -1602,7 +1602,7 @@ a:active {
     padding: 15px;
   }
 
-  .contact #title {
+  .buttonContainer #title {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -1613,7 +1613,7 @@ a:active {
     padding-bottom: 15px;
   }
 
-  .contact #availability {
+  .buttonContainer #availability {
     /*Display*/
     display: block;
     /*Typography*/
@@ -1624,12 +1624,12 @@ a:active {
     text-align: center;
   }
 
-    .contact #availability span {
+    .buttonContainer #availability span {
       /*Underline Letters*/
       border-bottom: 1px solid grey;
     }
 
-  .contact #contactText {
+  .buttonContainer #buttonContainerText {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -1644,7 +1644,7 @@ a:active {
     margin: 0 auto;
   }
 
-  .contact #contactLinks {
+  .buttonContainer #buttonContainerLinks {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -1657,7 +1657,7 @@ a:active {
     display: block;
   }
 
-  .contact #contactLinks button {
+  .buttonContainer #buttonContainerLinks button {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -1678,7 +1678,7 @@ a:active {
       text-decoration: underline;
     } 
 
-    .git {
+    .orangeButton {
       padding: 8px 30px;
       background-color: #F27935;
       border: 1px solid #E67E22;
@@ -1691,7 +1691,7 @@ a:active {
       margin: 20px 0 10px;
     }
 
-    .email {
+    .blueButton {
       padding: 8px 30px;
       background-color: #5C9DED;
       border: 1px solid #4B8CDC;
@@ -1704,7 +1704,7 @@ a:active {
       margin: 20px 0 10px;
     }
 
-     .alt1 {
+     .greenButton {
       padding: 8px 30px;
       background-color: #27ae60;
       border: 1px solid #2ecc71;
@@ -1717,7 +1717,7 @@ a:active {
       margin: 20px 0 10px;
     }
 
-     .alt2 {
+     .purpleButton {
       padding: 8px 30px;
       background-color: #8e44ad;
       border: 1px solid #9b59b6;
@@ -1730,7 +1730,7 @@ a:active {
       margin: 20px 0 10px;
     }
 
-    .linkedin {
+    .redButton {
       padding: 8px 30px;
       background-color: #D24D57;
       border: 1px solid #D64541;
@@ -1745,32 +1745,32 @@ a:active {
 
 /*4k*/
 @media screen and (min-width: 2000px) {
-  .contact {
+  .buttonContainer {
     /*Sizing*/
     width: 800px;
   }
 
-  .contact #title {
+  .buttonContainer #title {
     /*Typography*/
     font-size: 1.5em;
   }
 
-  .contact #availability {
+  .buttonContainer #availability {
     /*Typography*/
     font-size: 1.25em;
   }
 
-  .contact #contactText {
+  .buttonContainer #buttonContainerText {
     /*Typography*/
     font-size: 1.05em;
   }
 
-  .contact #contactLinks {
+  .buttonContainer #buttonContainerLinks {
     /*Typography*/
     font-size: 1.05em;
   }
 
-  .contact #contactLinks button {
+  .buttonContainer #buttonContainerLinks button {
     /*Typography*/
     font-size: 1em;
   }
@@ -1778,32 +1778,32 @@ a:active {
 
 /*Desktop*/
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
-  .contact {
+  .buttonContainer {
     /*Sizing*/
     width: 800px;
   }
 
-  .contact #title {
+  .buttonContainer #title {
     /*Typography*/
     font-size: 1.5em;
   }
 
-  .contact #availability {
+  .buttonContainer #availability {
     /*Typography*/
     font-size: 1.25em;
   }
 
-  .contact #contactText {
+  .buttonContainer #buttonContainerText {
     /*Typography*/
     font-size: 1.05em;
   }
 
-  .contact #contactLinks {
+  .buttonContainer #buttonContainerLinks {
     /*Typography*/
     font-size: 1em;
   }
 
-  .contact #contactLinks button {
+  .buttonContainer #buttonContainerLinks button {
     /*Typography*/
     font-size: 1em;
   }
@@ -1812,33 +1812,33 @@ a:active {
 /*Mobile*/
 
 @media screen and (max-width: 1000px) {
-  .contact {
+  .buttonContainer {
     /*Sizing*/
     max-width: 800px;
   }
 
-  .contact #title {
+  .buttonContainer #title {
     /*Typography*/
     font-size: 1.5em;
   }
 
-  .contact #availability {
+  .buttonContainer #availability {
     /*Typography*/
     font-size: 1.25em;
   }
 
-  .contact #contactText {
+  .buttonContainer #buttonContainerText {
     /*Typography*/
     font-size: 1em;
   }
 
-  .contact #contactLinks {
+  .buttonContainer #buttonContainerLinks {
     /*Typography*/
     font-size: 1em;
     margin: 0 auto;
   }
 
-  .contact button {
+  .buttonContainer button {
       /*Typography*/
       font-size: 1em;
       display: block;
@@ -1847,7 +1847,7 @@ a:active {
       width: calc(100vw - 30px);
   }
 
-  .contact .buttonContainer {
+  .buttonContainer .buttonContainer {
     /*Center Buttons*/
     display: flex !important;
     flex-direction: column;
