@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <title>Simple Site Series - 1</title> <!-- TODO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content=""> <!--TODO -->
+    <meta name="description" content=""> <!-- TODO -->
+    <meta name="language" content="en">
+    <meta name="robots" content="index,follow">
+    <meta name="revisit-after" content="5 days">
+    <meta name="theme-color" content=""> <!-- TODO -->
+
+    <!-- OG Meta Data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" /> <!-- TODO -->
+    <meta property="og:keywords" content="" /> <!-- TODO -->
+    <meta property="og:description" content="" /> <!-- TODO -->
+    <meta property="og:image" content="" /> <!-- TODO -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="canonical" href="" /> <!-- TODO -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+      // Initialize Wow
+      new WOW().init();
+      var screenHeight = $(window).height();
+      $(window).scroll(function () {
+          //if you hard code, then use console
+          //.log to determine when you want the 
+          //nav bar to stick.  
+          console.log($(window).scrollTop())
+
+          if ($(window).scrollTop() > screenHeight) {
+            $('#header').addClass('fixedHeader');
+          }
+          if ($(window).scrollTop() < screenHeight) {
+            $('#header').removeClass('fixedHeader');
+          }
+      });
+    </script>
+  </head>
+
+  <body class="indexLanding">
+    <!-- Particles Renderer -->
+    <div id="particles-js"></div>
+
+    <!-- Landing Page -->
+    <div data-wow-duration=".45s" class="wow fadeIn welcome" id="welcome">
+      <!-- Titles -->
+      <div id="welcomeContainer">
+        <h1 data-wow-duration=".9s" class="wow fadeIn" id="title">Simple Sites</h1>
+        <h2 data-wow-duration=".9s" class="wow fadeIn" id="subtitle">Series 1</h2>
+        <div id="app"></div>
+      </div>
+      <!-- Down Arrow -->
+      <div id="downArrow">
+        <a href="#about"><img src="assets/downArrow.svg" alt="Downwards Pointng Arrow"></a>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->  
+    <header class="header" id="header">
+      <span id="navTitle"><a href="index.html"><span>Simple Sites Series 1</a></span>
+      <nav id="navigationDesktop">
+        <a href="../index.html#">Image Card Showcase 1</a>
+      </nav>
+      <nav id="navigationMobile">
+        <a href="../index.html#">Image Card Showcase 1</a>
+      </nav>
+    </header>
+
+    <!-- Paragraph Sample 1 -->
+    <div class="about" id="about">
+      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">Paragraph Sample 1</h2>
+      <div class="wow fadeIn" data-wow-duration=".45s" id="aboutMe">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in iaculis nibh. Donec sollicitudin tincidunt diam, non sagittis nunc ultrices ut. Fusce imperdiet vestibulum magna, at ullamcorper nisl posuere quis. Aliquam id velit sit amet ante convallis vehicula. Praesent dapibus, tellus vel pulvinar luctus, diam libero pharetra ex, ut condimentum elit ex vel arcu. Aliquam sit amet euismod libero. Nullam vitae nunc et nisi vestibulum vehicula nec rutrum sem.
+        <br><br>
+        Donec bibendum vulputate felis, quis pretium ante consequat non. Sed quis nunc euismod, gravida orci et, tristique elit. Etiam molestie hendrerit mi, nec aliquet mauris bibendum at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla et tempor est. Donec at dignissim purus. Integer accumsan nulla ligula, eget convallis quam pretium eget. Vestibulum interdum sed diam quis mollis. Fusce facilisis rhoncus magna at euismod. Pellentesque vitae faucibus nunc, mollis auctor leo. Vivamus at sodales odio, at vehicula nibh. Nam orci turpis, porttitor id rutrum vel, ultricies rhoncus erat. Nullam iaculis, eros eu posuere finibus, elit velit luctus diam, ut posuere leo turpis id dolor.  
+      </div>
+    </div>
+
+    <!-- Image Card Showcase Sample 1 -->
+    <div class="projects portfolio" id="projects">
+      <h2 id="title">Image Card Showcase Sample 1</h2>
+      <div id="projectList">
+        <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+           <div class="card photo card-image">
+            <img ondragstart="return false" src="assets/testimage.jpg" alt="Sample Card Image 1"/>
+            <p>Sample Card 1</p><a class="images" href="html/showcase.html"><span>Learn More</span></a>
+          </div>
+        </div>
+        <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+           <div class="card photo card-image">
+            <img ondragstart="return false" src="assets/testimage.jpg" alt="Sample Card Image 2"/>
+            <p>Sample Card 2</p><a class="images" href="html/showcase.html"><span>Learn More</span></a>
+          </div>
+        </div>
+        <div data-wow-duration=".3s" class="wow fadeIn" id="projectItem">
+           <div class="card photo card-image">
+            <img ondragstart="return false" src="assets/testimage.jpg" alt="Sample Card Image 3"/>
+             <p>Sample Card 2</p><a class="images" href="html/showcase.html"><span>Learn More</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paragraph Sample 2 -->
+    <div class="about" id="about">
+      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">Paragraph Sample 2</h2>
+      <div class="wow fadeIn" data-wow-duration=".45s" id="aboutMe">
+        Nullam hendrerit mi eget enim pretium, non scelerisque purus semper. Nulla ac massa purus. Proin efficitur lacus urna, vel scelerisque est aliquet quis. In sagittis leo ullamcorper lorem dictum, a consequat lectus condimentum. Nulla facilisi. Donec a sapien sem. Mauris elementum eu nulla eget rutrum. Integer non aliquet enim, sit amet maximus ipsum. Mauris rhoncus lectus nibh, vitae gravida dolor iaculis a. Vivamus felis mauris, posuere eget velit id, feugiat mollis eros. Fusce suscipit nibh ut sem eleifend commodo.
+        <br><br>
+        Duis scelerisque fringilla orci ut rhoncus. Nulla fringilla eros vel elit dapibus, vel tempor quam mollis. Fusce fringilla, quam nec ullamcorper porttitor, nunc neque pulvinar leo, dignissim pellentesque lacus urna eu odio. Vivamus non nulla sit amet dolor ullamcorper sodales at sed mi. Quisque elit quam, viverra a lorem nec, ultrices scelerisque eros. Suspendisse placerat eget odio nec sodales. Nulla tempus eros ut velit malesuada, in volutpat velit tincidunt. Nam sit amet semper ligula. Donec a felis non ex vehicula mollis. Aenean quis vestibulum ante. Quisque accumsan arcu a ultrices euismod.   
+      </div>
+    </div>
+
+    <!-- Buttons Sample 1 -->
+    <div class="contact" id="contact" style="margin-top: .5em;">
+      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">Button Sample 1</h2>
+      <div data-wow-duration=".45s" class="wow fadeIn" id="summary">
+        <!-- <span data-wow-duration=".45s" class="wow fadeIn" id="availability">I am currently <span>available</span> for hire.</span> -->
+        <span data-wow-duration=".45s" class="wow fadeIn" id="contactText">
+            Nulla venenatis pulvinar rhoncus. Vestibulum at justo vitae tellus euismod tempor non id justo. Nam posuere gravida nisi. Sed et nibh non velit ornare ultricies et ac nisi. Curabitur facilisis congue tristique. Ut faucibus est sapien, malesuada fringilla magna mollis et. Duis nisi lectus, vestibulum sit amet malesuada id, commodo nec arcu. Phasellus egestas tortor augue, nec egestas elit tempor eget. Ut lobortis cursus velit, non dictum nisl. Suspendisse cursus, erat nec placerat bibendum, mi tellus varius lectus, eu tempor arcu arcu in tortor. Phasellus placerat dui a lorem congue, eu tempus leo posuere. Donec ullamcorper tellus eget felis elementum, vitae commodo orci semper. Ut efficitur porta ante at lacinia. Nullam nec malesuada lectus, sit amet aliquet nulla. 
+      </div>
+      <div data-wow-duration=".45s" class="wow fadeIn" id="contactLinks">
+        <a href="#"><button class="ease-in-out git">buttonOne</button></a>
+        <a href="#" target="_top"><button class="ease-in-out email">buttonTwo</button></a>
+        <a href="#"><button class="ease-in-out linkedin">buttonThree</button></a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" id="footer" style="border-top: 1px solid #e5e5e5;">
+      <span id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Simple Sites Series 1 // Developed by FlatlanderWoman</span>
+    </div>
+  </body>
+</html>

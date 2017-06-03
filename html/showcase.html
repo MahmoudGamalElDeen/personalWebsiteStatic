@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+  <html>
+  <head>
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <title>Simple Site Series - 1</title> <!-- TODO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content=""> <!--TODO -->
+    <meta name="description" content=""> <!-- TODO -->
+    <meta name="language" content="en">
+    <meta name="robots" content="index,follow">
+    <meta name="revisit-after" content="5 days">
+    <meta name="theme-color" content=""> <!-- TODO -->
+
+    <!-- OG Meta Data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" /> <!-- TODO -->
+    <meta property="og:keywords" content="" /> <!-- TODO -->
+    <meta property="og:description" content="" /> <!-- TODO -->
+    <meta property="og:image" content="" /> <!-- TODO -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
+    <link rel="icon" type="image/png" href="../assets/logo.png" />
+    <link rel="canonical" href="" /> <!-- TODO -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
+    <script type="text/javascript" src="../js/wow.min.js"></script>
+    <script type="text/javascript" src="../js/particles.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script>
+      // Initialize Wow
+      new WOW().init();
+    </script>
+  </head>
+
+  <body>
+   <!-- Navigation Bar -->  
+    <header class="header" id="header">
+      <span id="navTitle"><a href="../index.html"><span>Simple Sites Series 1</a></span>
+      <nav id="navigationDesktop">
+        <a href="../index.html#">Image Card Showcase 1</a>
+      </nav>
+      <nav id="navigationMobile">
+        <a href="../index.html#">Image Card Showcase 1</a>
+      </nav>
+    </header>
+
+    <!-- Project Container -->
+    <div class="projects portfolio" id="projects">
+      <h2 id="title">Sample Card Showcase</h2>
+      <h3 id="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+      <div id="projectList">
+        <div data-wow-duration=".3s" class="wow fadeIn large-card" id="projectItem">
+          <div class="card photo card-image">
+              <img id="deusEx1" src="../assets/testimage.jpg" alt="Test Image Instance 1">
+              <p>Test Image Instance 1</p><a id="hoverImg" onclick="openModal();currentSlide(1)" class="images"><span>View Image</span></a>
+          </div>
+        </div>
+        <div data-wow-duration=".3s" class="wow fadeIn large-card" id="projectItem">
+           <div class="card photo card-image">
+              <img id="deusEx2" src="../assets/testimage.jpg" alt="Test Image Instance 2">
+              <p>Test Image Instance 2</p><a id="hoverImg" onclick="openModal();currentSlide(2)" class="images"><span>View Image</span></a>
+            </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 2</div>
+            <img src="../assets/testimage.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 2</div>
+            <img src="../assets/testimage.jpg" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+          <div class="column">
+            <img class="demo" src="../assets/testimage.jpg" onclick="currentSlide(1)" alt="Test Image Instance 1">
+          </div>
+          <div class="column">
+            <img class="demo" src="../assets/testimage.jpg" onclick="currentSlide(2)" alt="Test Image Instance 1">
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Information -->
+      <div class="projectDescription">
+        Nullam hendrerit mi eget enim pretium, non scelerisque purus semper. Nulla ac massa purus. Proin efficitur lacus urna, vel scelerisque est aliquet quis. In sagittis leo ullamcorper lorem dictum, a consequat lectus condimentum. Nulla facilisi. Donec a sapien sem. Mauris elementum eu nulla eget rutrum. Integer non aliquet enim, sit amet maximus ipsum. Mauris rhoncus lectus nibh, vitae gravida dolor iaculis a. Vivamus felis mauris, posuere eget velit id, feugiat mollis eros. Fusce suscipit nibh ut sem eleifend commodo.
+        <br><br>
+        Duis scelerisque fringilla orci ut rhoncus. Nulla fringilla eros vel elit dapibus, vel tempor quam mollis. Fusce fringilla, quam nec ullamcorper porttitor, nunc neque pulvinar leo, dignissim pellentesque lacus urna eu odio. Vivamus non nulla sit amet dolor ullamcorper sodales at sed mi. Quisque elit quam, viverra a lorem nec, ultrices scelerisque eros. Suspendisse placerat eget odio nec sodales. Nulla tempus eros ut velit malesuada, in volutpat velit tincidunt. Nam sit amet semper ligula. Donec a felis non ex vehicula mollis. Aenean quis vestibulum ante. Quisque accumsan arcu a ultrices euismod. 
+      </div>
+
+      <!-- Project Links -->
+      <div class="linkCenter" id="contactLinks">
+        <a href="#"><button class="ease-in-out alt1">buttonOne</button></a>
+        <a href="#"><button class="ease-in-out alt2">buttonTwo</button></a>
+        <a href="#"><button class="ease-in-out git">buttonThree</button></a>
+        <a href="#"><button class="ease-in-out email">buttonFour</button></a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" id="footer">
+      <span id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Simple Sites Series 1 // Developed by FlatlanderWoman</span>
+    </div>
+  </body>
+</html>
