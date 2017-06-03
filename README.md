@@ -1,4 +1,4 @@
-# [Simple Sites Series 1](http://FlatlanderWoman.github.io/simpleSiteSeries1) - v3.0 
+# [Simple Sites Series 1](http://FlatlanderWoman.github.io/simpleSiteSeries1)
 #### The source code for the first Simple Site in the Simple Site Series: a practical way of handing my perfectionism.
 
 ## Overview
