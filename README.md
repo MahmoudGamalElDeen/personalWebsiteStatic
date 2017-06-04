@@ -1,4 +1,4 @@
-# [Simple Site Series - Europa](https://flatlanderwoman.github.io/simpleSitesSeries1/)
+# [Simple Site Series - Europa](https://flatlanderwoman.github.io/simpleSiteSeries-Europa/)
 #### The source code for the first Simple Site in the Simple Site Series: a practical way of handing my perfectionism.
 
 ## Overview
@@ -11,5 +11,5 @@ If you find any issues, let me know- submit an issue to the repository.
 
 ### Installation
 ```
-> git clone https://github.com/FlatlanderWoman/simpleSitesSeries1.git
+> git clone https://github.com/FlatlanderWoman/simpleSiteSeries-Europa.git
 ```
