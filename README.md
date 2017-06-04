@@ -1,4 +1,4 @@
-# [Simple Sites Series 1](https://flatlanderwoman.github.io/simpleSitesSeries1/)
+# [Simple Site Series - Europa](https://flatlanderwoman.github.io/simpleSitesSeries1/)
 #### The source code for the first Simple Site in the Simple Site Series: a practical way of handing my perfectionism.
 
 ## Overview
